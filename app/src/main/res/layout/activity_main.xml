@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/strathmoreBlue"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/intro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/strathmoreGold"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="52dp"
+        android:layout_height="42dp"
+        android:src="@drawable/back"
+        android:padding="10dp">
+
+    </androidx.appcompat.widget.AppCompatImageView>
+
+    <TextView
+        android:id="@+id/text_intro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/book_a_table"
+        android:textColor="@color/navy_blue"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10sp">
+
+    </TextView>
+
+    <view
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/css_gray"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:text="Lavish  Booking"
+        android:gravity="center"
+        android:textSize="40dp"
+        android:textColor="@color/navy_blue"/>
+
+    <EditText
+        android:id="@+id/userid"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/title"
+        android:background="@color/white"
+        android:drawableLeft="@drawable/leaf"
+        android:drawablePadding="16dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="12dp"
+        android:hint="Input User ID"
+        android:textColorHint="@color/navy_blue"/>
+
+    <EditText
+        android:id="@+id/table_size"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/userid"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        android:drawableLeft="@drawable/ic_baseline_table_chart_24"
+        android:drawablePadding="16dp"
+        android:hint="Select table size"
+        android:paddingLeft="10dp"
+        android:textColorHint="@color/navy_blue" />
+
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/table_size"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        android:drawableLeft="@drawable/ic_baseline_date_range_24"
+        android:drawablePadding="16dp"
+        android:hint="Select a Date"
+        android:paddingLeft="10dp"
+        android:textColorHint="@color/navy_blue" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_below="@id/date"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        android:drawableLeft="@drawable/ic_baseline_access_time_24"
+        android:drawablePadding="16dp"
+        android:hint="Select Time"
+        android:paddingLeft="10dp"
+        android:textColorHint="@color/navy_blue" />
+
+
+</RelativeLayout>
